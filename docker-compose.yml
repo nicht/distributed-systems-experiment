@@ -1,0 +1,5 @@
+version: '3'
+
+services:
+  distributed_systems_experiment:
+    container: distributed-systems-experiment

@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "distributed_systems_experiment"
+version = "1.0.0"
+description = "Testing distributed systems with zeromq"
+authors = ["Rodolfo Olivieri <rodolfo.olivieri@nicht.rocks>"]
+maintainers = ["Rodolfo Olivieri <rodolfo.olivieri@nicht.rocks>"]
+license = "MIT license"
+homepage = "https://nicht.rocks"
+repository = "https://github.com/nicht/distributed_systems_experiment"
+classifiers = [ ]
+keywords = [ ]
+include = [ "LICENSE.txt", "README.md" ]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.7.7"
+pyzmq = "^19.0.1"
+rich = "^1.2.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.3.5"
+black = "^19.10b0"
+tox = "^3.14.5"
+flake8 = "^3.7.9"
+pytype = "^2020.2.20"
+pre-commit = "^2.1.1"
+coverage = "^5.0.3"
+pylint = "^2.5.2"
+autopep8 = "^1.5.2"
+rope = "^0.17.0"
+
+[tool.black]
+line-length = 88
+target-version = [ "py3.7.7",]
+exclude = "((.eggs | .git | .pytype | .pytest_cache | build | dist))"
+
+
+[build-system]
+requires = ["poetry>=1.0.5"]
+build-backend = "poetry.masonry.api"
